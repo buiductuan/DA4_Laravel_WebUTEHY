@@ -1,0 +1,23 @@
+ <metapackage xmlns:os="http://opensuse.org/Standards/One_Click_Install" xmlns="http://opensuse.org/Standards/One_Click_Install">
+  	<group> <!-- A software bundle, typically only one, or one for each distribution in each file. -->
+  		<name>Mono</name> <!-- Name of the whole software bundle  Displayed in the UI -->
+  		<summary>Mono package updates from Xamarin</summary> <!-- Summary of the whole software bundle  Displayed in the UI -->
+  		<description>Mono package updates from Xamarin</description> <!-- Description of the whole software bundle  Displayed in the UI -->
+  		<remainSubscribed>true</remainSubscribed>  <!-- Specifies whether the user should remain subscribed to these repositories post installation, the user can override this. -->
+  		<repositories> <!-- A list of repositories required for this installation -->
+  			<repository> 
+  				<name>mono-project</name>  <!-- Name of this repository  -->
+  				<summary>Mono package updates from Xamarin</summary> <!-- Summary of this repository-->
+  				<description>Mono package updates from Xamarin</description><!-- Description of this repository, displayed in the UI-->
+  				<url>http://download.mono-project.com/repo/centos/</url><!-- URL of this repository to add-->
+  			</repository>
+  		</repositories>
+  		<software> <!-- A list of software items to install  during this installation -->
+  			<item>
+  				<name>mono-devel</name> <!-- Name of the software, this both identifies it within the repository, and is displayed to the user -->
+  				<summary>Mono developer component installation</summary> <!-- Summary of the software --> 
+  				<description>Installs the Mono C# compiler and all related pieces</description> <!-- Description of the software, displayed in the UI. --> 
+  			</item>
+  		</software>
+  	</group>
+ </metapackage>

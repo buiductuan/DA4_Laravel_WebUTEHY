@@ -1,0 +1,467 @@
+html
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    margin:0;
+    padding:0;
+}
+.homepage
+{
+    position: relative;
+    overflow-x: hidden;
+}
+/* Header
+------------*/
+#header
+{
+    min-height: 171px;
+    background: #fff;
+    position: relative;
+    z-index: 9;
+    background: none repeat scroll 0 0 #B60002;
+}
+
+.wrapper
+{
+    width: 978px;
+    margin: 0 auto;
+}
+/* Logo
+------------*/
+#logo
+{
+    float: left;
+    margin: 5px 0 0 0;
+}
+
+    #logo img
+    {
+        float: none;
+        margin: 0;
+        border:0;
+    }
+/* TopMenu 
+---------------*/
+#topmenu
+{
+    float: right;
+    height:30px;
+    z-index:99999;
+    clear:right;
+    position:relative;
+}
+
+    #topmenu ul.menu
+    {
+        margin: 6px 0 0;
+        padding: 0;
+    }
+
+        #topmenu ul.menu li
+        {
+            display: inline;
+            float: left;
+            padding: 0 1.1em 0 0;
+            border-right: 1px solid #DEDEDE;
+            text-shadow: 1px 1px 1px #fff;
+            margin: 0 0 0 1.1em;
+            list-style-type: none;
+        }
+
+            #topmenu ul.menu li a
+            {
+                color: #777;
+            }
+
+                #topmenu ul.menu li a:hover
+                {
+                    text-decoration: none;
+                    color: #222;
+                }
+
+                #topmenu ul.menu li a img
+                {
+                    float: none;
+                    margin: 0px 8px -4px 0;
+                }
+
+            #topmenu ul.menu li:last-child
+            {
+                border: none;
+                padding-right: 0;
+            }
+
+a.flag
+{
+    font-size: 16px;
+    padding: 1px 0;
+    background-repeat: no-repeat;
+    background-image: url('../images/designs/16a.png');
+    display: inline-block;
+}
+
+    a.flag:hover
+    {
+        background-image: url('../images/header/16.png');
+    }
+
+    a.flag img
+    {
+        border: 0;
+    }
+
+a.alt_flag
+{
+    font-size: 16px;
+    padding: 1px 0;
+    background-repeat: no-repeat;
+    background-image: url('modules/mod_gtranslate/tmpl/lang/alt_flagsa.png');
+}
+    a.alt_flag:hover
+    {
+        background-image: url('modules/mod_gtranslate/tmpl/lang/alt_flags.png');
+    }
+
+    a.alt_flag img
+    {
+        border: 0;
+    }
+
+.date
+{
+    color: #B8240D;
+    text-align: right;
+    font-size: 10px;
+}
+
+#search
+{
+    clear: right;
+    float: right;
+    margin: 25px 0 0 0;
+    position: relative;
+    z-index:999999;
+}
+
+    #search label
+    {
+        display: none;
+    }
+
+    #search .inputbox
+    {
+        background: #fff;
+        width: 190px;
+        height: 20px;
+        color: #999;
+        border: 1px solid #000000;
+        -moz-border-radius: 5px; /* for Mozilla browsers */
+        -webkit-border-radius: 5px; /* for webkit browsers (Chrome, Safari) */
+        border-radius: 5px;
+    }
+
+.inputbox, input[type="text"], input[type="password"]
+{
+    -moz-transition: all 0.4s ease-in 0s;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #DEDEDE;
+    color: #555555;
+    margin: 0 0.25em 0 0;
+    padding: 3px 5px;
+    width:190px;
+}
+
+#search .inputbox:focus
+{
+    color: #666;
+    border-color: #B2B2B2;
+}
+
+
+#search .button
+{
+    -moz-box-shadow: 0px 0px 8px rgba(0,0,0,0);
+    -webkit-box-shadow: 0px 0px 8px rgba(0,0,0,0);
+    box-shadow: 0px 0px 8px rgba(0,0,0,0);
+}
+
+button, input.button, a.button
+{
+    -moz-transition: all 0.3s ease-out 0s;
+    background: none repeat scroll 0 0 #1A1A1A;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    color: #DEDEDE;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Georgia,"Times New Roman",Times,serif;
+    font-size: 1em;
+    margin: 0 0.25em;
+    padding: 3px 12px;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+#search .button:hover
+{
+    -moz-box-shadow: 0px 0px 8px rgba(0,0,0,.4);
+    -webkit-box-shadow: 0px 0px 8px rgba(0,0,0,.4);
+    box-shadow: 0px 0px 8px rgba(0,0,0,.4);
+}
+
+
+
+
+
+/* com_search
+---------------*/
+form#searchForm
+{
+}
+
+    form#searchForm div.searchintro
+    {
+        padding: .4em 1em;
+        border: 1px solid #fff;
+        margin-bottom: 1.5em;
+        color: #514721;
+        background: #FFF6BF;
+        -moz-box-shadow: 0 0 8px #877736;
+        -webkit-box-shadow: 0 0 8px #877736;
+        box-shadow: 0 0 8px #877736;
+    }
+
+        form#searchForm div.searchintro p
+        {
+            margin: 0;
+        }
+
+
+    form#searchForm .ordering-box
+    {
+        padding-top: 15px;
+    }
+
+    form#searchForm label
+    {
+        width: auto;
+        padding-right: 10px;
+    }
+
+    form#searchForm .form-limit
+    {
+        float: left;
+        padding-top: 20px;
+    }
+
+    form#searchForm .counter
+    {
+        float: right;
+        padding-top: 25px;
+    }
+
+
+dl.search-results
+{
+    clear: both;
+}
+
+    dl.search-results .result-title
+    {
+        padding-top: 25px;
+        font-size: 1.3em;
+    }
+
+    dl.search-results dd
+    {
+        margin-left: 0;
+    }
+
+.floatleft
+{
+    float: left;
+}
+/* -- Footer --*/
+#footer
+{
+    clear: both;
+    margin-top:20px;
+    background: #B60002 url('../images/designs/slidebot.png') repeat-x scroll 0 0;
+}
+
+#footer_effect
+{
+    background: url('../images/designs/footer_effect.png') repeat-x top;
+}
+
+#footer .width20
+{
+    width: 30.3%;
+}
+
+#footer .separator
+{
+    margin-right: 0;
+    border: none;
+    padding-right: 20px;
+}
+
+#footer .moduletable
+{
+    margin: 10px 0 5px;
+    color: #999;
+    text-shadow: 1px 1px 1px #000;
+}
+
+
+    #footer .moduletable h3.mod-title
+    {
+        color: #fff;
+        padding: 0 0 2px;
+        padding-left: 30px;
+        margin: 0 0 8px;
+    }
+
+        #footer .moduletable h3.mod-title span
+        {
+            color: #666;
+            font-family: Verdana, Geneva, sans-serif;
+            display: block;
+            font-size: .6em;
+            margin-top: -7px;
+        }
+/* -- Footer --*/
+/* FooterMenus
+---------------*/
+#footer ul.menu
+{
+    padding-left: 1.25em;
+    margin-bottom: .5em;
+}
+
+    #footer ul.menu li
+{
+    background: transparent url('../images/designs/arrow.png') no-repeat 0 45%;
+    padding-left: 20px;
+    list-style: none;
+    line-height: 20px;
+}
+
+        #footer ul.menu li a
+        {
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+
+            #footer ul.menu li a:hover, #footer ul.menu li.current a
+            {
+                color: #FFBB00;
+            }
+
+
+/* Footer menu with suffix  "footer-connect" used
+		on the last menu with the social icons */
+#footer ul#footer-connect
+{
+    padding-left: .5em;
+    list-style-type: none;
+}
+
+    #footer ul#footer-connect li
+    {
+        padding-top: .45em;
+        padding-bottom: .4em;
+    }
+
+        #footer ul#footer-connect li a
+        {
+        }
+
+        #footer ul#footer-connect li img
+        {
+            margin: 0 9px -4px 0;
+            opacity: .2;
+            -webkit-transition: all .4s ease-out;
+            -moz-transition: all .4s ease-out;
+            -o-transition: all .4s ease-out;
+            transition: all .4s ease-out;
+        }
+
+        #footer ul#footer-connect li a:hover img
+        {
+            opacity: 1;
+        }
+
+/*  -- Copyright -- */
+#copyright
+{
+    clear: both;
+    min-height: 53px;
+    border-top: 1px solid #292929;
+    background: url('../images/designs/copyright.png') repeat-x top;
+    margin: 0;
+    padding: 0;
+}
+
+    #copyright .wrapper
+    {
+        position: relative;
+        overflow: hidden;
+    }
+
+
+div#copytext
+{
+    float: left;
+    padding-top: 15px;
+}
+
+    div#copytext .footer2
+    {
+        display: none;
+    }
+
+
+
+div#icelogo
+{
+    float: left;
+    padding: 14px 20px 0 0;
+}
+
+    div#icelogo p
+    {
+        margin: 0;
+    }
+
+        div#icelogo p a
+{
+    display: block;
+    float: left;
+    background: url('../images/designs/icetheme.png') no-repeat;
+    width: 120px;
+    height: 20px;
+    margin: 0 auto;
+    opacity: .4;
+    -webkit-transition: all .5s ease-in;
+    -moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+
+            div#icelogo p a:hover
+            {
+                opacity: 1;
+                -webkit-transform: rotate(360deg);
+                -moz-transform: rotate(360deg);
+                -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+
+            div#icelogo p a span
+            {
+                display: none;
+            }
+/*  -- Copyright -- */
